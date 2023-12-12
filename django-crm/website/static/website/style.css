@@ -1,0 +1,36 @@
+/* styles.css */
+
+/* .container {
+    background-color: #91de65;
+} */
+
+/* .text-center {
+  background-color: #DB4437;
+} */
+
+/* Style for MDB buttons */
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #0b0b0b;
+    color: #91de65;
+    border-color: solid green;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Style for Font Awesome icons inside buttons */
+  .btn i {
+    /* Adjust the icon's appearance */
+    margin-right: 5px;
+  }
+
+  /* Change color for Google icon */
+  .btn i.fab.fa-google {
+    color: #fff;
+  }
+
+  /* Change color for GitHub icon */
+  .btn i.fab.fa-github {
+    color: #fff;
+  }
