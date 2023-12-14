@@ -1,3 +1,5 @@
+{% block content %}
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'home' %}">effie.co</a>
@@ -12,6 +14,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
+
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
@@ -27,3 +30,5 @@
       </div>
     </div>
   </nav>
+
+  {% endblock %}
