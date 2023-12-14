@@ -2,6 +2,14 @@
 
 {% block content %}
 
+{% if user.is_authenticated %}
+
+<script>
+  window.location.href = "{% url 'home' %}"; // Redirect to the 'home' URL
+</script>
+
+{% else %}
+
 <div class="col-md-6 offset-md-3">
     <h1>Login</h1>
 
@@ -57,4 +65,6 @@
     </form>
 </div>
 
-  {% endblock %}
+{% endif %}
+
+{% endblock %}

@@ -14,9 +14,13 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
-          <li>
-            <a class="login" href="{% url Account/login.html %}">Login</a>
-          </li>
+          
+          <ul>
+            <a class="login" href="{% url 'Account:login' %}">Login</a>
+          </ul>
+          <ul>
+            <a class="signup" href="{% url 'Account:signup' %}">Sign Up</a>
+          </ul>
 
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
