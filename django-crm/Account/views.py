@@ -20,7 +20,7 @@ def create_account(request):
                messages.success(request, "Account created successfully!")
                return redirect('home')
         else:
-               messages.error(request, "Form is not valid")
+            messages.error(request, "Form is not valid")
             # return redirect('home')
     else:
         form = CustomUserCreationForm()
