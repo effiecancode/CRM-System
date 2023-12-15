@@ -21,7 +21,7 @@ def create_account(request):
                return redirect('home')
         else:
                messages.error(request, "Form is not valid")
-            #    return redirect('home')
+            # return redirect('home')
     else:
         form = CustomUserCreationForm()
     return render(request, 'account/create_account.html', {'form': form})
