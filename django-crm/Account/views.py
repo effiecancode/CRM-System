@@ -15,8 +15,7 @@ def create_account(request):
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
-               user = form.save()
-               login(request, user)
+               form.save()
                messages.success(request, "Account created successfully!")
                return redirect('home')
         else:

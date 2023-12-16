@@ -17,35 +17,13 @@
     <h1>Sign Up</h1>
         <!-- The action attribute should be set to the
         URL-pattern of the view that will handle the form submission. -->
-    <form method="POST" action="{% url 'Account:signup' %}">
+    <form method="POST" action="">
             {% csrf_token %}
-        <form>
-            <!-- Email input -->
-            <div data-mdb-input-init class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" name="email" required/>
-            </div>
 
-            <!-- Password input -->
-            <div data-mdb-input-init class="form-outline mb-4">
-                <input type="password" id="form3Example4" class="form-control" name="password" required/>
-            </div>
+            {{ form }}
 
-            <!-- Submit button -->
-            <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
-
-            <!-- Register buttons -->
-            <div class="text-center">
-                <p>or sign up with:</p>
-
-                <button data-mdb-ripple-init type="button" class="btn btn-dark btn-floating mx-1">
-                    <i class="fab fa-google"></i>
-                </button>
-
-                <button data-mdb-ripple-init type="button" class="btn btn-dark btn-floating mx-1">
-                    <i class="fab fa-github"></i>
-                </button>
-            </div>
-        </form>
+            <button type="submit">Submit</button>
+    </form>
 </div>
 
 <style>
